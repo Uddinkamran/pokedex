@@ -1,0 +1,31 @@
+*{
+  padding:0;
+  margin:0;
+}
+header{
+  background-color: #4dad5b;
+  padding:2%;
+}
+
+#imgIn{
+  position: relative;
+  display: inline-block;
+}
+
+footer{
+background-color: #e6bc2f;
+color: white;
+text-align: center;
+padding:1.5%;
+}
+
+#bgAll{
+  background-image: url("pokeBack6.png");
+}
+
+#main {
+    width: 900px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+}
