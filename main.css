@@ -6,21 +6,40 @@ header{
   background-color: #4dad5b;
   padding:2%;
 }
+#title{
+  height:50px;
+  width: 250px;
+  text-align: center;
+  position: relative;
+}
 
 #imgIn{
   position: relative;
   display: inline-block;
 }
-
+.pokeBall1{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 520px;
+  left: 530px;
+}
 footer{
 background-color: #e6bc2f;
 color: white;
 text-align: center;
-padding:1.5%;
+padding:.5%;
 }
 
 #bgAll{
   background-image: url("pokeBack6.png");
+}
+
+ #pokeDex{
+  background-image: url("pokepic.jpg");
+  background-size: 900px 500px;
+  width: 900px;
+  height: 500px;
 }
 
 #main {
