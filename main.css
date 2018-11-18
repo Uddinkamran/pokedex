@@ -17,18 +17,86 @@ header{
   position: relative;
   display: inline-block;
 }
-.pokeBall1{
+
+/* ol for Pokeinfo, the information table */
+ol{
+  text-align: center;
+  border-top:6px solid red;
+  background-color: lightgray;
+  width: 270px;
+
+
+}
+
+#pokeInfo{
+  position: absolute;
+  top: 300px;
+  left: 560px;
+
+}
+
+/* ******************************All pokeball******************** */
+#pokeBall1{
   position: absolute;
   width: 50px;
   height: 50px;
   top: 520px;
-  left: 530px;
+  left: 515px;
 }
+
+#pokeBall2{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 520px;
+  left: 575px;
+}
+#pokeBall3{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 520px;
+  left: 635px;
+}
+#pokeBall4{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 520px;
+  left: 695px;
+}
+#pokeBall5{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 520px;
+  left: 755px;
+}
+#pokeBall6{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 520px;
+  left: 815px;
+}
+
+
+/* ******************************All pokeball******************** */
 footer{
 background-color: #e6bc2f;
 color: white;
 text-align: center;
 padding:.5%;
+}
+
+#imgHolder{
+  position: absolute;
+  top:-47px;
+  left:-528px;
+  width: 372px;
+  height: 277px;
+  border-style: solid;
+  border-color: green;
 }
 
 #bgAll{
