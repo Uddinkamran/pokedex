@@ -10,38 +10,38 @@ class pokemon{
 
     this.container = document.getElementById('pokeInfo');
     //make a div with classname product
-    this.element = document.createElement('div');
+    this.element = document.getElementById('dis');
     this.element.className = 'product';
 
   }
 
 display(){
-
-  let name = document.createElement("ol");
+  //if statement to check if elements have been created
+  let name = document.querySelector("ol");
   name.innerHTML = "Name: " + this.name;
   this.element.appendChild(name);
 
   this.container.appendChild(this.element);
 
-  let pokeHealth = document.createElement("ol");
+  let pokeHealth = document.querySelector("ol");
   pokeHealth.innerHTML = "HP: " + this.pokeHealth;
   this.element.appendChild(pokeHealth);
 
   this.container.appendChild(this.element);
 
-  let pokeAttack = document.createElement("ol");
+  let pokeAttack = document.querySelector("ol");
   pokeAttack.innerHTML = "Attack: " + this.pokeAttack;
   this.element.appendChild(pokeAttack);
 
   this.container.appendChild(this.element);
 
-  let pokeDefense = document.createElement("ol");
+  let pokeDefense = document.querySelector("ol");
   pokeDefense.innerHTML = "Defense: " + this.pokeDefense;
   this.element.appendChild(pokeDefense);
 
   this.container.appendChild(this.element);
 
-  let pokeAbilities = document.createElement("ol");
+  let pokeAbilities = document.querySelector("ol");
   pokeAbilities.innerHTML = "Ability: " + this.pokeAbilities;
   this.element.appendChild(pokeAbilities);
 
@@ -155,10 +155,31 @@ axios.get
 });
 }
 
-// Below are click events to display objects ********************************
+// function trainer(){
+//   let name = "Satoshi Nakamoto";
+//
+//   let hp = "1";
+//
+//   let ability = "create bitcoin";
+//
+//   let attack= "Throw bitcoin"
+//
+//   let defense= "sell bitcoin"
+//
+//   let pic="download.jpg";
+//
+//
+//   let trainer = new pokemon(name,hp,attack,defense,ability,pic);
+//   trainer.display();
+//
+//
+// }
+// // Below are click events to display objects ********************************
+// trainer();
 
 let hoOh_Clicker = document.getElementById("pokeBall1");
 hoOh_Clicker.addEventListener('click',ho_Oh);
+
 
 let lugia_Clicker = document.getElementById("pokeBall3");
 lugia_Clicker.addEventListener('click',lu);
