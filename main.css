@@ -42,6 +42,13 @@ ol{
   height: 50px;
   top: 520px;
   left: 515px;
+  transition: transform .2s;
+}
+
+#pokeBall1:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);
 }
 
 #pokeBall2{
@@ -50,36 +57,74 @@ ol{
   height: 50px;
   top: 520px;
   left: 575px;
+  transition: transform .2s;
 }
+
+#pokeBall2:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);
+}
+
 #pokeBall3{
   position: absolute;
   width: 50px;
   height: 50px;
   top: 520px;
   left: 635px;
+  transition: transform .2s;
 }
+
+#pokeBall3:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);
+}
+
 #pokeBall4{
   position: absolute;
   width: 50px;
   height: 50px;
   top: 520px;
   left: 695px;
+  transition: transform .2s;
 }
+
+#pokeBall4:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);
+}
+
 #pokeBall5{
   position: absolute;
   width: 50px;
   height: 50px;
   top: 520px;
   left: 755px;
+  transition: transform .2s;
 }
+
+#pokeBall5:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);
+}
+
 #pokeBall6{
   position: absolute;
   width: 50px;
   height: 50px;
   top: 520px;
   left: 815px;
+  transition: transform .2s;
 }
 
+#pokeBall6:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(2.0);
+}
 
 /* ******************************All pokeball******************** */
 footer{

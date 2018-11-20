@@ -1,5 +1,5 @@
 
-class pokemon{
+class Pokemon{
   constructor(name,pokeHealth,pokeAttack,pokeDefense,pokeAbilities,pokePic){
     this.name=name;
     this.pokeHealth=pokeHealth;
@@ -29,6 +29,7 @@ display(){
 
   this.container.appendChild(this.element);
 
+
   let pokeAttack = document.querySelector("ol");
   pokeAttack.innerHTML = "Attack: " + this.pokeAttack;
   this.element.appendChild(pokeAttack);
@@ -55,6 +56,29 @@ display(){
 
 }
 }
+
+class Trainer{
+  constructor(){
+    this.pokeData=[];
+
+
+  }
+  all(){
+    return this.pokeData;
+  }
+  add(poke){
+    this.pokeData.push(poke);
+  }
+  get(name){
+    for(let i=0;i<this.pokeData.length;i++){
+      if(name === this.pokeData[i].name){
+      return this.pokeData[i];
+    }
+    }
+  }
+}
+
+let Kam = new Trainer();
 
 
 //******************************************API CALL FOR HO-OH********************************
@@ -84,12 +108,40 @@ axios.get
 
       let pic="Ho-oh.gif";
 
-      let hooh = new pokemon(name, hp, attack, defense, ability,pic);
+      let hooh = new Pokemon(name, hp, attack, defense, ability,pic);
       hooh.display();
 
 });
 }
 
+axios.get
+  ("http://fizal.me/pokeapi/api/v2/name/ho-oh.json")
+    .then(function(response){
+
+      let name="Ho-oh";
+
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic="Ho-oh.gif";
+
+      let hooh = new Pokemon(name, hp, attack, defense, ability,pic);
+      Kam.add(hooh);
+
+
+});
 //******************************************API CALL FOR LUGIA***********************
 
 function lu(){
@@ -117,12 +169,43 @@ axios.get
       let pic="Lugia_Shiny.gif";
 
 
-      let lugia = new pokemon(name,hp,attack,defense,ability,pic);
+      let lugia = new Pokemon(name,hp,attack,defense,ability,pic);
       lugia.display();
 
 
 });
 }
+
+axios.get
+  ("http://fizal.me/pokeapi/api/v2/name/lugia.json")
+    .then(function(response){
+
+      let name = "Lugia";
+
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic="Lugia_Shiny.gif";
+
+
+      let lugia = new Pokemon(name,hp,attack,defense,ability,pic);
+
+      Kam.add(lugia);
+
+
+});
 
 //***********************************API CALL FOR Rayquaza********************************
 function ray(){
@@ -149,40 +232,120 @@ axios.get
 
       let pic= "Rayquaza.gif";
 
-      let rayquaza = new pokemon(name,hp,attack,defense,ability,pic);
+      let rayquaza = new Pokemon(name,hp,attack,defense,ability,pic);
       rayquaza.display();
+
 
 });
 }
 
-// function trainer(){
-//   let name = "Satoshi Nakamoto";
-//
-//   let hp = "1";
-//
-//   let ability = "create bitcoin";
-//
-//   let attack= "Throw bitcoin"
-//
-//   let defense= "sell bitcoin"
-//
-//   let pic="download.jpg";
-//
-//
-//   let trainer = new pokemon(name,hp,attack,defense,ability,pic);
-//   trainer.display();
-//
-//
-// }
-// // Below are click events to display objects ********************************
-// trainer();
+axios.get
+  ("http://fizal.me/pokeapi/api/v2/name/rayquaza.json")
+    .then(function(response){
+
+      let name="Rayquaza";
+
+      let hp = response.data.stats[5].base_stat;
+      console.log("HP: ", hp);
+
+      let ability = response.data.abilities[0].ability.name;
+      for (var i = 0; i < response.data.abilities.length; i++) {
+        let results= response.data.abilities[i].ability.name;
+        console.log("Abilities: ", results);
+      }
+
+      let attack= response.data.stats[4].base_stat;
+      console.log("Attack: ", attack);
+
+      let defense= response.data.stats[3].base_stat;
+      console.log("Defense: ", defense);
+
+      let pic= "Rayquaza.gif";
+
+      let rayquaza = new Pokemon(name,hp,attack,defense,ability,pic);
+
+      Kam.add(rayquaza);
+
+
+});
+//*********************************************Random pokemon*****************
+function random1(){
+  let name = "???????";
+
+  let hp = "????";
+
+  let ability = "?????";
+
+  let attack= "???????"
+
+  let defense= "????????"
+
+  let pic="rand1.gif";
+
+
+  let random1 = new Pokemon(name,hp,attack,defense,ability,pic);
+  random1.display();
+
+
+}
+
+function random2(){
+  let name = "???????";
+
+  let hp = "????";
+
+  let ability = "?????";
+
+  let attack= "???????"
+
+  let defense= "????????"
+
+  let pic="rand3.gif";
+
+
+  let random2 = new Pokemon(name,hp,attack,defense,ability,pic);
+  random2.display();
+
+
+}
+
+
+function random3(){
+  let name = "???????";
+
+  let hp = "????";
+
+  let ability = "?????";
+
+  let attack= "???????"
+
+  let defense= "????????"
+
+  let pic="tenor.gif";
+
+
+  let random3 = new Pokemon(name,hp,attack,defense,ability,pic);
+  random3.display();
+
+
+}
+// Below are click events to display objects ********************************
+
 
 let hoOh_Clicker = document.getElementById("pokeBall1");
 hoOh_Clicker.addEventListener('click',ho_Oh);
 
+let rand_1 = document.getElementById("pokeBall2");
+rand_1.addEventListener('click',random1);
 
 let lugia_Clicker = document.getElementById("pokeBall3");
 lugia_Clicker.addEventListener('click',lu);
+
+let rand_2 = document.getElementById("pokeBall4");
+rand_2.addEventListener('click',random2);
+
+let rand_3 = document.getElementById("pokeBall5");
+rand_3.addEventListener('click',random3);
 
 let ray_Clicker = document.getElementById("pokeBall6");
 ray_Clicker.addEventListener('click',ray);
