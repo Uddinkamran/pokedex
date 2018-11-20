@@ -5,6 +5,7 @@
 header{
   background-color: #4dad5b;
   padding:2%;
+  text-align: center;
 }
 #title{
   height:50px;
@@ -131,7 +132,7 @@ footer{
 background-color: #e6bc2f;
 color: white;
 text-align: center;
-padding:.5%;
+padding:.3%;
 }
 
 #imgHolder{
