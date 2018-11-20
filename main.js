@@ -349,3 +349,8 @@ rand_3.addEventListener('click',random3);
 
 let ray_Clicker = document.getElementById("pokeBall6");
 ray_Clicker.addEventListener('click',ray);
+
+
+
+// step 1- settings then Github Pages
+// select master branch then click syn
