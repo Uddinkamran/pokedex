@@ -86,7 +86,7 @@ let name,hp,ability,attack,defense,pic;
 
 function ho_Oh(){
 axios.get
-  ("http://fizal.me/pokeapi/api/v2/name/ho-oh.json")
+  ("https://fizal.me/pokeapi/api/v2/name/ho-oh.json")
     .then(function(response){
 
       let name="Ho-oh";
@@ -115,7 +115,7 @@ axios.get
 }
 
 axios.get
-  ("http://fizal.me/pokeapi/api/v2/name/ho-oh.json")
+  ("https://fizal.me/pokeapi/api/v2/name/ho-oh.json")
     .then(function(response){
 
       let name="Ho-oh";
@@ -146,7 +146,7 @@ axios.get
 
 function lu(){
 axios.get
-  ("http://fizal.me/pokeapi/api/v2/name/lugia.json")
+  ("https://fizal.me/pokeapi/api/v2/name/lugia.json")
     .then(function(response){
 
       let name = "Lugia";
@@ -177,7 +177,7 @@ axios.get
 }
 
 axios.get
-  ("http://fizal.me/pokeapi/api/v2/name/lugia.json")
+  ("https://fizal.me/pokeapi/api/v2/name/lugia.json")
     .then(function(response){
 
       let name = "Lugia";
@@ -210,7 +210,7 @@ axios.get
 //***********************************API CALL FOR Rayquaza********************************
 function ray(){
 axios.get
-  ("http://fizal.me/pokeapi/api/v2/name/rayquaza.json")
+  ("https://fizal.me/pokeapi/api/v2/name/rayquaza.json")
     .then(function(response){
 
       let name="Rayquaza";
@@ -240,7 +240,7 @@ axios.get
 }
 
 axios.get
-  ("http://fizal.me/pokeapi/api/v2/name/rayquaza.json")
+  ("https://fizal.me/pokeapi/api/v2/name/rayquaza.json")
     .then(function(response){
 
       let name="Rayquaza";
